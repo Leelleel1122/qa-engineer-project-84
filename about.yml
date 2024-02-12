@@ -1,16 +1,14 @@
 ---
-# Если хотите пояснить код, можно добавить комментарий с помощью символа #
-name: Ilona Maskova # Ваше имя
+name: Lenara Mustafaeva
 job: QA Engineer
 level: junior
 email: ilona@hexlet.io
 description: |
-  Этот текст — описание в свободной форме. Здесь можно рассказать пару интересных фактов про себя.
+  This is my first experience in the IT field. I like it even despite the difficulties.
 
-  Текст можно написать в несколько абзацев
-skills: # Список навыков в виде списка, можете написать сюда что-то свое
+  I am really excited about my first project. Good luck for me. 
+skills:
   - Функциональное тестирование
   - Написание багрепортов
-  - Linux
-  - Слепая печать
-  - Английский язык C1
+  - Составление тест-кейсов
+  - Английский язык B2
