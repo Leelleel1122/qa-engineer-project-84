@@ -128,8 +128,6 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    кнопка "в корзину"
-    кнопка "корзина"
   steps:
     - нажимаем на кнопку "в корзину"
     - переходим во вкладку "корзина"
@@ -143,8 +141,6 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    кнопка "в корзину"
-    кнопка "корзина"
     Sofa for Coffe Cafe
     Sneaker shoes
   steps:
@@ -161,8 +157,6 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    кнопка "в корзину"
-    кнопка "корзина"
     Sofa for Coffe Cafe
     Sneaker shoes
   steps:
