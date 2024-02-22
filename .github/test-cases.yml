@@ -167,3 +167,118 @@
     - переходим во вкладку "корзина"
   expected-result: |
     Пользователь должен увидеть все добаленные раннее товары в корзине
+
+- summary: |
+    Проверка мобильной версии сайта
+  requirement: |
+    Основной контент должен дублироваться на всех устройствах
+  prerequisites: |
+    Открыта страница магазина, открыта вкладка Devtools
+  test-data: |
+    iPhone SE
+    iPad Air
+    Sumsung Galaxy A51
+  steps:
+    - Открываем Devtools
+    - Открываем Toggle Device Toolbar
+    - Выбираем iPhone SE
+    - Выбираем iPad Air
+    - Выбираем Sumsung Galaxy A51
+  expected-result: |
+    Основной контент дублируется на всех устройствах
+
+- summary: |
+    Проверка мобильной версии сайта
+  requirement: |
+    Дизайн и функционал сайта не должен меняться
+  prerequisites: |
+    Открыта страница магазина, открыта вкладка Devtools
+  test-data: |
+    iPhone SE
+    iPad Air
+    Sumsung Galaxy A51
+  steps:
+    - Открываем Devtools
+    - Открываем Toggle Device Toolbar
+    - Выбираем iPhone SE
+    - Выбираем iPad Air
+    - Выбираем Sumsung Galaxy A51
+  expected-result: |
+    Дизайн и функционал сайта не меняется
+
+- summary: |
+    Проверка оптимизации скорости закгрузки
+  requirement: |
+    Приразных скоростях соединения с Интернетом, основная информация сайта должна прогружаться не дольше 3 секунд
+  prerequisites: |
+    Открыта страница магазина, открыта вкладка Devtools
+  test-data: |
+    Fast 3G
+    Slow 3G
+    No throtting
+  steps:
+    - Открываем Devtools
+    - Выбираем No throtting
+    - Обновляем страницу
+    - Выбираем Fast 3G
+    - Обновляем страницу
+    - Выбираем Slow 3G
+    - Обновляем страницу
+  expected-result: |
+    Основной контент сайта прогружается не дольше 3 секунд
+
+- summary: |
+    Проверка совместимости с последней версией браузера Opera
+  requirement: |
+    Сайт должен отображаться и работать в браузере Opera
+  prerequisites: |
+    Открыт браузер Opera, Открыта страница магазина
+  test-data: |
+    No data
+  steps:
+    - Открываем Opera
+    - Открываем сайт 
+  expected-result: |
+    Сайт отображается и работает в браузере Opera
+
+- summary: |
+    Проверка совместимости с последней версией браузера Chrome
+  requirement: |
+    Сайт должен отображаться и работать в браузере Chrome
+  prerequisites: |
+    Открыт браузер Chrome, Открыта страница магазина
+  test-data: |
+    No data
+  steps:
+    - Открываем Chrome
+    - Открываем сайт 
+  expected-result: |
+    Сайт отображается и работает в браузере Chrome
+
+- summary: |
+    Проверка совместимости с последней версией браузера Firefox
+  requirement: |
+    Сайт должен отображаться и работать в браузере Firefox
+  prerequisites: |
+    Открыт браузер Firefox, Открыта страница магазина
+  test-data: |
+    No data
+  steps:
+    - Открываем Firefox
+    - Открываем сайт 
+  expected-result: |
+    Сайт отображается и работает в браузере Firefox
+
+- summary: |
+    Проверка совместимости с последней версией браузера Safari
+  requirement: |
+    Сайт должен отображаться и работать в браузере Safari
+  prerequisites: |
+    Открыт браузер Safari, Открыта страница магазина
+  test-data: |
+    No data
+  steps:
+    - Открываем Safari
+    - Открываем сайт 
+  expected-result: |
+    Сайт отображается и работает в браузере Safari
