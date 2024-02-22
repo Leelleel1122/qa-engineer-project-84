@@ -6,8 +6,8 @@
   prerequisites: |
     Открыта страница магазина
   test-data: |
-    table
-    dress
+    furniture
+    womens-dresses
   steps:
     - Вводим ключевое слово товара
   expected-result: |
@@ -34,7 +34,7 @@
   prerequisites:
     Открыта страница магазина
   test-data: |
-    tabel
+    furnitre
     drass
   steps:
     - Вводим ключевое слово товара
