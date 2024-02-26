@@ -41,11 +41,11 @@
 
 - summary: |
     Проверка мобильной версии сайта
-  status: pass
+  status: fail
 
 - summary: |
     Проверка адаптивности сайта на разных устройствах
-  status: fail
+  status: pass
 
 - summary: |
     Проверка оптимизации скорости загрузки
