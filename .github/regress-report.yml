@@ -1,0 +1,139 @@
+---
+test-cases:
+  - summary: |
+      Проверка поиска товара по ключевому слову
+    status: fail
+
+  - summary: |
+      Проверка поиска несуществующего товара по ключевому слову
+    status: fail
+
+  - summary: |
+      Проверка поиска товара по неверно введённому ключевому слову
+    status: fail
+
+  - summary: |
+      Проверка поиска товара по категории
+    status: pass
+
+  - summary: |
+      Проверка фильтрации товаров
+    status: pass
+
+  - summary: |
+      Проверка перехода на страницу товара
+    status: pass
+
+  - summary: |
+      Проверка добавления товаров в корзину
+    status: pass
+ 
+  - summary: |
+      Проверка добавления товаров в корзину со страницы товара
+    status: pass
+
+  - summary: |
+      Проверка просмотра содержимого корзины
+    status: pass
+
+  - summary: |
+      Проверка мобильной версии сайта
+    status: fail
+
+  - summary: |
+      Проверка адаптивности сайта на разных устройствах
+    status: pass
+
+  - summary: |
+      Проверка оптимизации скорости загрузки
+    status: pass
+
+  - summary: |
+      Проверка совместимости с последней версией браузера Opera
+    status: pass
+
+  - summary: |
+      Проверка совместимости с последней версией браузера Chrome
+    status: pass
+
+  - summary: |
+      Проверка совместимости с последней версией браузера Firefox
+    status: pass
+
+  - summary: |
+      Проверка совместимости с последней версией браузера Safari
+    status: pass
+
+  - summary: |
+      Проверка функции "в наличии"
+    status: pass
+    
+bugreports:
+  - summary: |
+      Не работает проверка поиска товара по ключевому слову
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Ввести ключевое слово товара в строку поиска
+    expected-result: |
+      На странице магазина появятся товары, соответствующие ключевому слову
+    actual-result: |
+      Помимо запрошенных товаров, выводятся товары с другим ключевым словом  
+
+  - summary: |
+      Не работает функция вывода товаров
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Ввести несуществующее ключевое слово товара в строку поиска
+    expected-result: |
+      Выводится сообщение "Ничего не найдено!"
+    actual-result: |
+      Выводятся все товары магазина
+
+ - summary: |
+      Не работает функция вывода товаров
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Ввести ключевое слово товара в строку поиска с ошибкой
+    expected-result: |
+      Выводится сообщение "Ничего не найдено!"
+    actual-result: |
+      Выводятся все товары магазина
+
+ - summary: |
+      При сбросе категории исчезает кнопка "Следующая"
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Ввести ключевое слово товара в строку поиска
+      3. Очистить ключевое слово
+    expected-result: |
+      Функционал не меняется
+    actual-result: |
+      Исчезает кнопка "Следующая"
+
+  - summary: |
+      Отсутствует боковое меню
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Открыть вкладку Devtools
+      3. Выбрать iPhone SE
+      4. Выбрать iPad Air
+      5. Выбрать Sumsung Galaxy A51
+    expected-result: |
+      Функционал не меняется
+    actual-result: |
+      Исчезает боковое меню с выбором фильтрации товаров
