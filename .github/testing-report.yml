@@ -64,5 +64,8 @@
   status: pass
 
 - summary: |
+    Проверка функции "в наличии"
+  status: fail
+- summary: |
     Проверка совместимости с последней версией браузера Safari
   status: pass  
