@@ -8,10 +8,6 @@
   status: pass
 
 - summary: |
-    Проверка поиска товара по неверно введённому ключевому слову
-  status: pass
-
-- summary: |
     Проверка поиска товара по категории
   status: pass
 
@@ -32,47 +28,7 @@
   status: pass
 
 - summary: |
-    Проверка просмотра содержимого корзины
-  status: pass
-
-- summary: |
-    Проверка мобильной версии сайта
-  status: fail
-
-- summary: |
-    Проверка адаптивности сайта на разных устройствах
-  status: pass
-
-- summary: |
-    Проверка оптимизации скорости загрузки
-  status: pass
-
-- summary: |
-    Проверка совместимости с последней версией браузера Opera
-  status: pass
-
-- summary: |
-    Проверка совместимости с последней версией браузера Chrome
-  status: pass
-
-- summary: |
-    Проверка совместимости с последней версией браузера Firefox
-  status: pass
-
-- summary: |
     Проверка функции "в наличии"
-  status: fail
-
-- summary: |
-    Проверка совместимости с последней версией браузера Safari
-  status: pass  
-
-- summary: |
-    Проверка сброса категории
-  status: fail
-
-- summary: |
-    Проверка ввода количества товаров
   status: fail
 
 - summary: |
@@ -82,3 +38,19 @@
 - summary: |
     Проверка учёта скидок при вводе ценовых значений
   status: fail 
+
+- summary: |
+    Проверка переключения языка на сайте
+  status: pass
+
+- summary: |
+    Проверка удаления товаров из корзины
+  status: pass
+
+- summary: |
+    Проверка функции очистить корзину
+  status: pass
+
+- summary: |
+    Проверка оформления заказа
+  status: pass 
