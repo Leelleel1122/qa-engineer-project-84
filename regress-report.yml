@@ -1,0 +1,84 @@
+---
+test-cases:
+  - summary: |
+      Проверка поиска товара по ключевому слову
+    status: pass
+
+  - summary: |
+      Проверка поиска несуществующего товара по ключевому слову
+    status: pass
+
+  - summary: |
+      Проверка поиска товара по категории
+    status: pass
+
+  - summary: |
+      Проверка фильтрации товаров
+    status: pass
+
+  - summary: |
+      Проверка перехода на страницу товара
+    status: pass
+
+  - summary: |
+      Проверка добавления товаров в корзину
+    status: pass
+ 
+  - summary: |
+      Проверка добавления товаров в корзину со страницы товара
+    status: pass
+
+  - summary: |
+      Проверка функции "в наличии"
+    status: pass
+
+  - summary: |
+      Проверка граничных значений при вводе цены товаров
+    status: fail
+
+  - summary: |
+      Проверка учёта скидок при вводе ценовых значений
+    status: fail 
+
+  - summary: |
+      Проверка переключения языка на сайте
+    status: fail
+
+  - summary: |
+      Проверка удаления товаров из корзины
+    status: pass
+
+  - summary: |
+      Проверка функции очистить корзину
+    status: pass
+
+  - summary: |
+      Проверка оформления заказа
+    status: pass 
+    
+bugreports: 
+  - summary: |
+      Выводятся все товары при поиске несуществующего товара
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Ввести несуществующее ключевое слово товара в строку поиска
+    expected-result: |
+      Выводится сообщение "Ничего не найдено!"
+    actual-result: |
+      Выводятся все товары магазина
+
+ - summary: |
+      При выборе категории товара исчезает кнопка "Следующая"
+    environment: |
+      Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+      ОС Windows 10 24.02
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Выбрать категорию товара
+    expected-result: |
+      Функционал не меняется
+    actual-result: |
+      Исчезает кнопка "Следующая"
